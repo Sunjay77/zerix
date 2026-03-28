@@ -4,22 +4,41 @@ export const NavbarContent = styled.nav`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 10px 50px;
+  padding: 10px 30px;
   align-items: center;
+  background: #0a0a0a;
 `;
 
 export const LogoText = styled.h1`
-font-size: 20px;`
+  font-size: 20px;
+  color: #ffffff;
+`;
 
 export const PreviewButton = styled.button`
   background-color: transparent;
-  border:none;
+  border: none;
   font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
 `;
 
 export const ExportButton = styled.button`
-  background-color: transparent;
-  border: 1px solid #d1d5db;
-  font-size: 14px;
-  border-radius: 4px;
-`
+  background: #ffffff;
+  color: #0a0a0a;
+  border: none;
+  padding: 7px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.85;
+  }
+`;
+
+export const ButtonGroup = styled.div`
+  display: flex;
+  gap: 12px;
+  align-items: center;
+`;
