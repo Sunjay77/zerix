@@ -7,6 +7,7 @@ export const NavbarContent = styled.nav`
   padding: 10px 30px;
   align-items: center;
   background: #0a0a0a;
+  border-bottom: 1px solid gray;
 `;
 
 export const LogoText = styled.h1`
@@ -20,6 +21,7 @@ export const PreviewButton = styled.button`
   font-size: 14px;
   color: #ffffff;
   font-weight: bold;
+  cursor:pointer;
 `;
 
 export const ExportButton = styled.button`
@@ -30,7 +32,6 @@ export const ExportButton = styled.button`
   border-radius: 6px;
   font-weight: bold;
   cursor: pointer;
-  transition: opacity 0.2s ease;
 
   &:hover {
     opacity: 0.85;
