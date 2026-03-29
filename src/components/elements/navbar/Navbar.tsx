@@ -1,4 +1,4 @@
-import { ButtonGroup, ExportButton, IconItem, LogoText, NavbarContent, PreviewButton } from "./NavbarStyle";
+import { ButtonGroup, ExportButton, IconItem, LogoText, NavbarContent } from "./NavbarStyle";
 import { PreviewIcon } from "../../icons/PreviewIcon";
 
 const Navbar: React.FC = () => {

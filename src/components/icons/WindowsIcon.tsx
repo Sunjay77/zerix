@@ -8,7 +8,6 @@ type IconProps = {
 
 export const WindowsIcon = ({
   size = 15,
-  color = "currentColor",
   className,
 }: IconProps) => {
   return (
