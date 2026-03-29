@@ -1,4 +1,12 @@
-import { ButtonGroup, ExportButton, IconItem, LogoText, NavbarContent } from "./NavbarStyle";
+/** @format */
+
+import {
+  ButtonGroup,
+  ExportButton,
+  LogoText,
+  NavbarContent,
+  PreviewButton,
+} from "./NavbarStyle";
 import { PreviewIcon } from "../../icons/PreviewIcon";
 
 const Navbar: React.FC = () => {
@@ -6,13 +14,13 @@ const Navbar: React.FC = () => {
     <NavbarContent>
       <LogoText>Zerix</LogoText>
       <ButtonGroup>
-        <IconItem>
+        <PreviewButton>
           <PreviewIcon />
-          <span>Preview</span>
-        </IconItem>
+          Preview
+        </PreviewButton>
         <ExportButton>Export</ExportButton>
       </ButtonGroup>
     </NavbarContent>
   );
-}
-export default Navbar
+};
+export default Navbar;

@@ -8,39 +8,39 @@ export const NavbarContent = styled.nav`
   justify-content: space-between;
   padding: 10px 30px;
   align-items: center;
-  background: #0a0a0a;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #e0e0e0;
 `;
 
 export const LogoText = styled.h1`
   font-size: 20px;
-  color: #ffffff;
+  font-family: monospace;
 `;
 
-export const PreviewButton = styled.button`
-  background-color: transparent;
-  border: none;
+export const BaseButton = styled.button`
+  padding: 6px 10px;
   font-size: 14px;
+  gap: 5px;
+  border-radius: 6px;
+`;
+
+export const PreviewButton = styled(BaseButton)`
+  background-color: transparent;
+  border: 1px solid #e0e0e0;
   color: gray;
-  font-weight: bold;
+  display: flex;
+  align-items: center;
   cursor: pointer;
   &:hover {
+    background-color: gray;
     color: white;
   }
 `;
 
-export const ExportButton = styled.button`
-  background: #ffffff;
-  color: #0a0a0a;
+export const ExportButton = styled(BaseButton)`
+  background: #6c63ff;
   border: none;
-  padding: 7px 20px;
-  border-radius: 6px;
-  font-weight: bold;
+  color: #ffffff;
   cursor: pointer;
-
-  &:hover {
-    opacity: 0.85;
-  }
 `;
 
 export const ButtonGroup = styled.div`
@@ -49,15 +49,3 @@ export const ButtonGroup = styled.div`
   align-items: center;
 `;
 
-export const IconItem = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  cursor: pointer;
-  padding: 7px;
-  border-radius: 10px;
-  color: gray;
-  &:hover {
-    color: white;
-  }
-`;
