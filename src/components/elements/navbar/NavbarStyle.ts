@@ -1,3 +1,5 @@
+/** @format */
+
 import styled from "styled-components";
 export const NavbarContent = styled.nav`
   height: 64px;
@@ -19,9 +21,12 @@ export const PreviewButton = styled.button`
   background-color: transparent;
   border: none;
   font-size: 14px;
-  color: #ffffff;
+  color: gray;
   font-weight: bold;
-  cursor:pointer;
+  cursor: pointer;
+  &:hover {
+    color: white;
+  }
 `;
 
 export const ExportButton = styled.button`
@@ -42,4 +47,17 @@ export const ButtonGroup = styled.div`
   display: flex;
   gap: 12px;
   align-items: center;
+`;
+
+export const IconItem = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 10px;
+  color: gray;
+  &:hover {
+    color: white;
+  }
 `;

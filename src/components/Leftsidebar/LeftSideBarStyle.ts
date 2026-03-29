@@ -18,6 +18,7 @@ export const SidebarHeading = styled.h2`
   font-size: small;
   color: #6f7279;
   margin-top: 20px;
+  padding-left: 5px;
 `;
 
 export const SidebarItem = styled.div`
