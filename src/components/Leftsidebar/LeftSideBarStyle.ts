@@ -26,6 +26,6 @@ export const SidebarItem = styled.div`
   border-radius: 10px;
   &:hover {
     color: white;
-    background: gray;
+    background: #6c63ff;
   }
 `;
