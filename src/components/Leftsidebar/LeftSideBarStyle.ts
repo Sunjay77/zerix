@@ -2,7 +2,7 @@
 
 import styled from "styled-components";
 export const LeftSidebar = styled.div`
-  width: 25vh;
+  width: 20vh;
   height: 100vh;
   display: flex;
   flex-direction: column;
