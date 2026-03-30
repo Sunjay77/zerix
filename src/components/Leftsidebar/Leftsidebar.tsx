@@ -1,11 +1,7 @@
 /** @format */
 
 import { LeftSidebar, SidebarHeading, SidebarItem } from "./LeftSideBarStyle";
-import { WindowsIcon } from "../icons/WindowsIcon";
-import { HeroIcon } from "../icons/HeroIcon";
-import { FeatureIcon } from "../icons/FeatureIcon";
-import { CtaIcon } from "../icons/CtaIcon";
-import { FooterIcon } from "../icons/FooterIcon";
+import { WindowsIcon, HeroIcon, FeatureIcon,CtaIcon, FooterIcon } from "../icons/AppIcons";
 const LeftSideBar: React.FC = () => {
   return (
     <LeftSidebar>

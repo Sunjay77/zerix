@@ -4,21 +4,17 @@ import styled from "styled-components";
 export const LeftSidebar = styled.div`
   width: 25vh;
   height: 100vh;
-  background: black;
-  border: solid black;
-  color: gray;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  border-right: 1px solid gray;
+  border-right: 2px solid #e0e0e0;
   font-family: monospace;
+  padding-left: 20px;
 `;
 export const SidebarHeading = styled.h2`
   font-weight: 100;
   font-size: small;
-  color: #6f7279;
   margin-top: 20px;
-  padding-left: 5px;
 `;
 
 export const SidebarItem = styled.div`
@@ -30,6 +26,6 @@ export const SidebarItem = styled.div`
   border-radius: 10px;
   &:hover {
     color: white;
-    background: #1a1a1a;
+    background: gray;
   }
 `;

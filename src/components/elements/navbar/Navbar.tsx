@@ -7,7 +7,7 @@ import {
   NavbarContent,
   PreviewButton,
 } from "./NavbarStyle";
-import { PreviewIcon } from "../../icons/PreviewIcon";
+import { PreviewIcon } from "../../icons/AppIcons";
 
 const Navbar: React.FC = () => {
   return (
