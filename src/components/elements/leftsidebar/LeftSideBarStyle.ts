@@ -11,6 +11,8 @@ export const LeftSidebar = styled.div`
   font-family: monospace;
   padding-left: 20px;
   position:sticky;
+  top: 0;
+  overflow-y: auto;
 `;
 export const SidebarHeading = styled.h2`
   font-weight: 100;
@@ -27,6 +29,6 @@ export const SidebarItem = styled.div`
   border-radius: 10px;
   &:hover {
     color: white;
-    background: #6c63ff;
+    background: #07005c;
   }
 `;

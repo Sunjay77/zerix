@@ -11,6 +11,8 @@ export const RightSideBarSection = styled.section`
   font-family: monospace;
   padding-left: 20px;
   position: sticky;
+  border-left: 2px solid #e0e0e0;
+  top: 0;
 `;
 
 export const RightSideBarHeading = styled.h2`
