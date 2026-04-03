@@ -3,7 +3,7 @@
 import styled from "styled-components";
 
 export const RightSideBarSection = styled.section`
-  width: 280px;
+  width: 20%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -13,6 +13,7 @@ export const RightSideBarSection = styled.section`
   position: sticky;
   border-left: 2px solid #e0e0e0;
   top: 0;
+  right: 0;
 `;
 
 export const RightSideBarHeading = styled.h2`
@@ -21,5 +22,4 @@ export const RightSideBarHeading = styled.h2`
   margin-top: 20px;
 `;
 
-export const RightSideBarTxt = styled.p`
-`
+export const RightSideBarTxt = styled.p``;
