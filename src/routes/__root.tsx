@@ -14,7 +14,6 @@ const RootLayout = () => (
       <Outlet />
       <RightSideBar />
     </div>
-
     <TanStackRouterDevtools />
   </>
 );
