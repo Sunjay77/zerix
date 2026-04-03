@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
     <HeroSection>
 
         <HeroContent>
-          <Title>Welcome to Our App</Title>
+          <Title>Welcome</Title>
           <Subtitle>Your journey starts here!</Subtitle>
           <ButtonGroup>
             <PrimaryButton>Get Started</PrimaryButton>
