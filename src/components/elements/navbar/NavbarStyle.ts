@@ -14,7 +14,7 @@ export const NavbarContent = styled.nav`
 export const LogoText = styled.h1`
   font-size: 20px;
   font-family: monospace;
-  color: #6c63ff;
+  color: #07005c;
 `;
 
 export const BaseButton = styled.button`
@@ -38,10 +38,14 @@ export const PreviewButton = styled(BaseButton)`
 `;
 
 export const ExportButton = styled(BaseButton)`
-  background: #6c63ff;
+  background: #07005c;
   border: none;
   color: #ffffff;
   cursor: pointer;
+  &:hover{
+    background-color: #261b9b;
+    color: white;
+  }
 `;
 
 export const ButtonGroup = styled.div`
