@@ -2,16 +2,26 @@
 
 import styled from "styled-components";
 
+export const HeroDiv = styled.div`
+  padding: 100px 100px;
+  width: 100%;
+  align-items: center;
+  min-height: 70vh;
+  padding: 80px 40px;
+`;
+
 export const HeroSection = styled.section`
   display: flex;
+  height: 100vh;
+  max-width: 1200px;
   width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #6c63ff;
-  color: #fff;
+  background: #07005c;
+  color: #d2b896;
   text-align: center;
-  padding: 60px 40px;
+  border-radius: 15px;
 `;
 
 export const HeroContent = styled.div`
@@ -38,7 +48,7 @@ export const ButtonGroup = styled.div`
 
 export const Button = styled.button`
   padding: 10px 10px;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 600;
   border: none;
   border-radius: 6px;
@@ -46,11 +56,11 @@ export const Button = styled.button`
 `;
 
 export const PrimaryButton = styled(Button)`
-  background: #7439c7;
+  background: #20159d;
   color: white;
-
+  cursor: pointer;
   &:hover {
-    background: #942dcf;
+    background: #372bba;
   }
 `;
 
