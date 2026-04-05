@@ -1,31 +1,34 @@
 import styled from "styled-components";
 export const LeftSidebar = styled.div`
-  width: 20%;
-  height: 100vh;
+  width: 15rem;
+  height: calc(100vh - 4rem);
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  border-right: 2px solid #e0e0e0;
+  border-right: .125rem solid #e0e0e0;
   font-family: monospace;
-  padding-left: 20px;
+  padding-left: 1.25rem;
   position: sticky;
   top: 0;
 `;
 export const SidebarHeading = styled.h2`
   font-weight: 100;
   font-size: small;
-  margin-top: 20px;
+  margin-top: 1.25rem;
 `;
 
-export const SidebarItem = styled.div`
+export const SidebarItem = styled.button`
   display: flex;
+  border:none;
   align-items: center;
-  gap: 10px;
+  gap: .625rem;
   cursor: pointer;
-  padding: 7px;
-  border-radius: 10px;
+  padding: .4375rem;
+  border-radius: .625rem;
+  background:transparent;
   &:hover {
     color: white;
     background: #07005c;
   }
+    
 `;
