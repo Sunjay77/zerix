@@ -1,5 +1,3 @@
-/** @format */
-
 import styled from "styled-components";
 export const LeftSidebar = styled.div`
   width: 20%;
@@ -10,7 +8,7 @@ export const LeftSidebar = styled.div`
   border-right: 2px solid #e0e0e0;
   font-family: monospace;
   padding-left: 20px;
-  position:sticky;
+  position: sticky;
   top: 0;
   overflow-y: auto;
 `;
