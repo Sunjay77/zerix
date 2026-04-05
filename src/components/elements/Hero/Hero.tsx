@@ -1,4 +1,3 @@
-
 import {
   HeroContent,
   HeroSection,
@@ -7,14 +6,13 @@ import {
   ButtonGroup,
   PrimaryButton,
   SecondaryButton,
-  HeroDiv
+  HeroDiv,
 } from "./HeroStyle";
 
 const Hero: React.FC = () => {
   return (
-          <HeroDiv>
-    <HeroSection>
-
+    <HeroDiv>
+      <HeroSection>
         <HeroContent>
           <Title>Welcome</Title>
           <Subtitle>Your journey starts here!</Subtitle>
@@ -24,7 +22,7 @@ const Hero: React.FC = () => {
           </ButtonGroup>
         </HeroContent>
       </HeroSection>
-           </HeroDiv>
+    </HeroDiv>
   );
 };
 
