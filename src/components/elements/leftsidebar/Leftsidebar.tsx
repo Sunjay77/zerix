@@ -13,23 +13,19 @@ const LeftSideBar: React.FC = () => {
     <LeftSidebar>
       <SidebarHeading>COMPONENTS</SidebarHeading>
       <SidebarItem>
-        <WindowsIcon /> <h3>Navbar</h3>{" "}
+        <WindowsIcon /> <h3>Navbar</h3>
       </SidebarItem>
       <SidebarItem>
-        {" "}
-        <HeroIcon /> <h3>Hero</h3>{" "}
+        <HeroIcon /> <h3>Hero</h3>
       </SidebarItem>
       <SidebarItem>
-        {" "}
-        <FeatureIcon /> <h3>Features</h3>{" "}
+        <FeatureIcon /> <h3>Features</h3>
       </SidebarItem>
       <SidebarItem>
-        {" "}
-        <CtaIcon /> <h3>CTA</h3>{" "}
+        <CtaIcon /> <h3>CTA</h3>
       </SidebarItem>
       <SidebarItem>
-        {" "}
-        <FooterIcon /> <h3>Footer</h3>{" "}
+        <FooterIcon /> <h3>Footer</h3>
       </SidebarItem>
     </LeftSidebar>
   );

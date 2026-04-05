@@ -9,7 +9,7 @@ import RightSideBar from "../components/elements/rightsidebar/RightSideBar";
 const RootLayout = () => (
   <>
     <Navbar />
-    <div style={{ display: "flex", position: "relative", width:"100%" }}>
+    <div style={{ display: "flex", width:"100%" }}>
       <LeftSideBar />
       <Outlet />
       <RightSideBar />
