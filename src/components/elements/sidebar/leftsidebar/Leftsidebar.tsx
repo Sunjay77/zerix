@@ -7,7 +7,7 @@ import {
   FeatureIcon,
   CtaIcon,
   FooterIcon,
-} from "../icons/AppIcons";
+} from "../../icons/AppIcons";
 const LeftSideBar: React.FC = () => {
   return (
     <LeftSidebar>

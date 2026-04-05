@@ -10,7 +10,6 @@ export const LeftSidebar = styled.div`
   padding-left: 20px;
   position: sticky;
   top: 0;
-  overflow-y: auto;
 `;
 export const SidebarHeading = styled.h2`
   font-weight: 100;
