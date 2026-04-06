@@ -8,7 +8,6 @@ import {
   SecondaryButton,
   HeroDiv,
 } from "./HeroStyle";
-
 const Hero: React.FC = () => {
   return (
     <HeroDiv>
