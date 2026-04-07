@@ -8,16 +8,22 @@ import {
   PreviewButton,
 } from "./NavbarStyle";
 import { PreviewIcon } from "../icons/AppIcons";
+import { Link } from "@tanstack/react-router";
 
 const Navbar: React.FC = () => {
   return (
     <NavbarContent>
-      <LogoText>Zerix</LogoText>
+      <Link to="/">
+        <LogoText>Zerix</LogoText>
+      </Link>
       <ButtonGroup>
-        <PreviewButton>
-          <PreviewIcon />
-          Preview
-        </PreviewButton>
+        <Link to="/preview">
+          <PreviewButton>
+            <PreviewIcon />
+            Preview
+          </PreviewButton>
+        </Link>
+
         <ExportButton>Export</ExportButton>
       </ButtonGroup>
     </NavbarContent>
