@@ -8,12 +8,12 @@ export const NavbarContent = styled.nav`
   justify-content: space-between;
   padding: 10px 30px;
   align-items: center;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid var(--border-color);
 `;
 
 export const LogoText = styled.h1`
   font-size: 20px;
-  color: #07005c;
+  color: var(--Buttons-color);
 `;
 
 export const BaseButton = styled.button`

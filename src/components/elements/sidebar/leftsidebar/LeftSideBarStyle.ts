@@ -5,7 +5,7 @@ export const LeftSidebar = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  border-right: .125rem solid #e0e0e0;
+  border-right: .125rem solid var(--border-color);
   padding-left: 1.25rem;
   position: sticky;
   top: 0;
@@ -27,7 +27,7 @@ export const SidebarItem = styled.button`
   background:transparent;
   &:hover {
     color: white;
-    background: #07005c;
+    background: var(--Buttons-color);
   }
     
 `;

@@ -1,9 +1,15 @@
 /* index css */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-    font-family: monospace;
+  font-family: monospace;
+}
+
+:root {
+  --border-color: #e0e0e0;
+  --Buttons-color: #07005c;
 }
