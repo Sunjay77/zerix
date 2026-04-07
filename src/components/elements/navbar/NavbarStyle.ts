@@ -13,7 +13,6 @@ export const NavbarContent = styled.nav`
 
 export const LogoText = styled.h1`
   font-size: 20px;
-  font-family: monospace;
   color: #07005c;
 `;
 

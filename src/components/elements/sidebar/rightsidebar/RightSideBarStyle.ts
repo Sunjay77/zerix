@@ -9,7 +9,6 @@ export const RightSideBarSection = styled.section`
   flex-direction: column;
   gap: 0.5rem;
   border-left: 0.125rem solid #e0e0e0;
-  font-family: monospace;
   padding-left: 1.25rem;
   position: sticky;
   top: 0;
