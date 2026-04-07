@@ -7,10 +7,20 @@ import {
   PrimaryButton,
   SecondaryButton,
   HeroDiv,
+  NavbarContent,
+  LogoTxt,
 } from "./HeroStyle";
+
 const Hero: React.FC = () => {
   return (
     <HeroDiv>
+      <NavbarContent>
+        <LogoTxt>Zerix</LogoTxt>
+        <a>Home</a>
+        <a>Features</a>
+        <a>Pricing</a>
+        <a>Contact</a>
+      </NavbarContent>
       <HeroSection>
         <HeroContent>
           <Title>Welcome</Title>

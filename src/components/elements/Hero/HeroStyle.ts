@@ -19,7 +19,6 @@ export const HeroSection = styled.section`
   background: #07005c;
   color: #d2b896;
   text-align: center;
-  border-radius: .9375rem;
 `;
 
 export const HeroContent = styled.div`
@@ -45,11 +44,11 @@ export const ButtonGroup = styled.div`
 `;
 
 export const Button = styled.button`
-  padding: .625rem .625rem;
+  padding: 0.625rem 0.625rem;
   font-size: 1rem;
   font-weight: 600;
   border: none;
-  border-radius: .375rem;
+  border-radius: 0.375rem;
   cursor: pointer;
 `;
 
@@ -64,11 +63,28 @@ export const PrimaryButton = styled(Button)`
 
 export const SecondaryButton = styled(Button)`
   background: transparent;
-  border: .125rem solid #fff;
+  border: 0.125rem solid #fff;
   color: #fff;
 
   &:hover {
     background: #fff;
     color: #0b0d14;
   }
+`;
+
+export const NavbarContent = styled.nav`
+  height: 64px;
+  width: 100%;
+  display: flex;
+  justify-content:
+  padding: 10px 30px;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  background: #07005c;
+  color: white;
+`;
+
+export const LogoTxt = styled.h1`
+  font-size: 20px;
+  color: var(--Buttons-color);
 `;
