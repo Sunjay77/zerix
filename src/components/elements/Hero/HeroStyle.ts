@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeroDiv = styled.div`
   padding: 6.25rem 6.25rem;
-  width: 60%;
+  width: 65%;
   align-items: center;
   min-height: 70vh;
   padding: 5rem 2.5rem;
