@@ -1,21 +1,60 @@
 import styled from "styled-components";
 
+// Navbar
+
+export const NavbarContent = styled.nav`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  height: 4rem;
+  color: white;
+`;
+
+export const LogoTxt = styled.h1`
+  font-size: 1.25rem;
+  color: white;
+  cursor: pointer;
+`;
+
+export const NavLinks = styled.ul`
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  color: white;
+`;
+
+export const NavCta = styled.button`
+  border-radius: 0.3125rem;
+  border: none;
+  padding: 10px 10px;
+  background: #20159d;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    background: #372bba;
+  }
+`;
+
+export const NavLi = styled.li`
+  cursor: pointer;
+`;
 export const OuterDiv = styled.div`
-  padding: 3rem 3rem;
+  padding: 48px 48px;
   width: 90%;
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
 `;
 
 export const Builder = styled.div`
   background: #07005c;
-  border-radius: 0.625rem;
+  border-radius: 15px;
 `;
 
 export const HeroSection = styled.section`
   display: flex;
-  height: 60vh;
-  max-width: 75rem;
+  height: 100%;
+  max-width: 1200px;
   width: 100%;
   flex-direction: column;
   align-items: center;
@@ -26,33 +65,33 @@ export const HeroSection = styled.section`
 `;
 
 export const HeroContent = styled.div`
-  max-width: 43.75rem;
+  max-width: 700px;
 `;
 
 export const Title = styled.h1`
-  font-size: 3rem;
-  margin-bottom: 1.25rem;
+  font-size: 48px;
+  margin-bottom: 20px;
   color: white;
 `;
 
 export const Subtitle = styled.p`
-  font-size: 1.25rem;
-  margin-bottom: 1.875rem;
+  font-size: 20px;
+  margin-bottom: 30px;
   color: white;
 `;
 
 export const ButtonGroup = styled.div`
   display: flex;
-  gap: 1.25rem;
+  gap: 20px;
   justify-content: center;
 `;
 
 export const Button = styled.button`
-  padding: 0.625rem 0.625rem;
-  font-size: 1rem;
+  padding: 10px 10px;
+  font-size: 16px;
   font-weight: 600;
   border: none;
-  border-radius: 0.375rem;
+  border-radius: 6px;
   cursor: pointer;
 `;
 
@@ -67,7 +106,7 @@ export const PrimaryButton = styled(Button)`
 
 export const SecondaryButton = styled(Button)`
   background: transparent;
-  border: 0.125rem solid #fff;
+  border: 2px solid #fff;
   color: #fff;
 
   &:hover {
@@ -76,57 +115,17 @@ export const SecondaryButton = styled(Button)`
   }
 `;
 
-// Navbar
-
-export const NavbarContent = styled.nav`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 2rem;
-  height: 64px;
-  color: white;
-`;
-
-export const LogoTxt = styled.h1`
-  font-size: 20px;
-  color: white;
-  cursor: pointer;
-`;
-
-export const NavLinks = styled.ul`
-  display: flex;
-  gap: 32px;
-  list-style: none;
-  color: white;
-`;
-
-export const NavCta = styled.button`
-  border-radius: 5px;
-  border: none;
-  padding: 0.625rem 0.625rem;
-  background: #20159d;
-  color: white;
-  cursor: pointer;
-  &:hover {
-    background: #372bba;
-  }
-`;
-
-export const NavLi = styled.li`
-  cursor: pointer;
-`;
-
 // Features
 
 export const FeaturesSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 0;
+  padding: 48px 0;
   background-color: #372bba;
-  height: 40vh;
+  height: 100%;
   justify-content: center;
-  row-gap: 10px;
+  row-gap: 0.625rem;
 `;
 
 export const FeaturesTitle = styled.h1`
@@ -140,7 +139,7 @@ export const FeaturesParagraph = styled.p`
 
 export const FeaturesCards = styled.div`
   display: flex;
-  gap: 1.25rem;
+  gap: 20px;
   justify-content: center;
 `;
 
@@ -148,15 +147,15 @@ export const IconWrapper = styled.div`
   color: white;
   display: flex;
   flex-direction: row;
-  gap: 15px;
-  margin-top: 20px;
+  gap: 0.9375rem;
+  margin-top: 1.25rem;
 `;
 
 export const IconBox = styled.div`
   background-color: #1e1e1e;
-  border-radius: 12px;
-  width: 50px;
-  height: 50px;
+  border-radius: 0.75rem;
+  width: 3.125rem;
+  height: 3.125rem;
   display: flex;
   align-items: center;
   justify-content: center;
