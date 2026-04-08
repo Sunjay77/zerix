@@ -13,7 +13,14 @@ import {
   Builder,
   OuterDiv,
   NavLi,
+  FeaturesSection,
+  FeaturesTitle,
+  FeaturesParagraph,
+  IconWrapper,
+  IconBox,
 } from "./BuilderStyle";
+
+import { CloudLightningIcon, ShieldIcon, UpIcon } from "../icons/AppIcons";
 
 const Hero: React.FC = () => {
   return (
@@ -51,6 +58,28 @@ const Hero: React.FC = () => {
             </ButtonGroup>
           </HeroContent>
         </HeroSection>
+
+        {/* Features */}
+
+        <FeaturesSection>
+          <FeaturesTitle>Our Features</FeaturesTitle>
+          <FeaturesParagraph>
+            Discover the amazing features we offer.
+          </FeaturesParagraph>
+          <IconWrapper>
+            <IconBox>
+              <CloudLightningIcon />
+            </IconBox>
+
+            <IconBox>
+              <ShieldIcon />
+            </IconBox>
+
+            <IconBox>
+              <UpIcon />
+            </IconBox>
+          </IconWrapper>
+        </FeaturesSection>
       </Builder>
     </OuterDiv>
   );
