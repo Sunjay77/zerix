@@ -8,7 +8,7 @@ export const RightSideBarSection = styled.section`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  border-left: 0.125rem solid var(--border-color);
+  border: 0.125rem solid var(--border-color);
   padding-left: 1.25rem;
   position: sticky;
   top: 0;

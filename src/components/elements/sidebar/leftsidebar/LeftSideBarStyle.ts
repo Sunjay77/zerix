@@ -5,7 +5,7 @@ export const LeftSidebar = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  border-right: .125rem solid var(--border-color);
+  border: .125rem solid var(--border-color);
   padding-left: 1.25rem;
   position: sticky;
   top: 0;
