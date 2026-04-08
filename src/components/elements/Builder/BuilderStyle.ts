@@ -1,11 +1,16 @@
 import styled from "styled-components";
 
-export const HeroDiv = styled.div`
-  padding: 6.25rem 6.25rem;
-  width: 65%;
-  align-items: center;
-  min-height: 70vh;
-  padding: 5rem 2.5rem;
+export const OuterDiv = styled.div`
+  padding: 3rem 3rem;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+`;
+
+export const Builder = styled.div`
+  background: #07005c;
+  border-radius: .625rem;
+  
 `;
 
 export const HeroSection = styled.section`
@@ -16,7 +21,7 @@ export const HeroSection = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #07005c;
+
   color: #d2b896;
   text-align: center;
 `;
@@ -44,11 +49,11 @@ export const ButtonGroup = styled.div`
 `;
 
 export const Button = styled.button`
-  padding: 0.625rem 0.625rem;
+  padding: .625rem .625rem;
   font-size: 1rem;
   font-weight: 600;
   border: none;
-  border-radius: 0.375rem;
+  border-radius: .375rem;
   cursor: pointer;
 `;
 
@@ -63,7 +68,7 @@ export const PrimaryButton = styled(Button)`
 
 export const SecondaryButton = styled(Button)`
   background: transparent;
-  border: 0.125rem solid #fff;
+  border: .125rem solid #fff;
   color: #fff;
 
   &:hover {
@@ -72,19 +77,42 @@ export const SecondaryButton = styled(Button)`
   }
 `;
 
+// Navbar
+
 export const NavbarContent = styled.nav`
-  height: 64px;
-  width: 100%;
   display: flex;
-  justify-content:
-  padding: 10px 30px;
   align-items: center;
-  border-bottom: 1px solid var(--border-color);
-  background: #07005c;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 64px;
   color: white;
 `;
 
 export const LogoTxt = styled.h1`
   font-size: 20px;
-  color: var(--Buttons-color);
+  color: white;
+  cursor: pointer;
 `;
+
+export const NavLinks = styled.ul`
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  color: white;
+`;
+
+export const NavCta = styled.button`
+  border-radius: 5px;
+  border: none;
+  padding: .625rem .625rem;
+  background: #20159d;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    background: #372bba;
+  }
+`;
+
+export const NavLi = styled.li`
+  cursor: pointer;
+`
