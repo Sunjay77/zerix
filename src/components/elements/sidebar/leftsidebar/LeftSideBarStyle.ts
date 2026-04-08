@@ -11,7 +11,6 @@ export const LeftSidebar = styled.div`
   top: 0;
 `;
 export const SidebarHeading = styled.h2`
-  font-weight: 100;
   font-size: small;
   margin-top: 1.25rem;
 `;

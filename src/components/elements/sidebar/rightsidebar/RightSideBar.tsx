@@ -3,7 +3,7 @@ import { RightSideBarHeading, RightSideBarSection, RightSideBarTxt } from "./Rig
 const RightSideBar: React.FC = () => {
   return (
     <RightSideBarSection>
-      <RightSideBarHeading>Right Sidebar</RightSideBarHeading>
+      <RightSideBarHeading>PROPERTIES</RightSideBarHeading>
       <RightSideBarTxt>This is the right sidebar content.</RightSideBarTxt>
     </RightSideBarSection>
   );
