@@ -5,28 +5,28 @@ export const NavbarContent = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 32px;
-  height: 4rem;
-  width: 100vh;
+  padding: 0 2rem;
+  height: var(--navbar-height);
+  width: 100%;
   color: white;
 `;
 
 export const LogoTxt = styled.h1`
-  font-size: 1.25rem;
+  font-size: 20px;
   color: white;
 `;
 
 export const NavLinks = styled.ul`
   display: flex;
-  gap: 2rem;
+  gap: 32px;
   list-style: none;
   color: white;
 `;
 
 export const NavCta = styled.button`
-  border-radius: 0.3125rem;
+  border-radius: 5px;
   border: none;
-  padding: 10px 10px;
+  padding: .625rem .625rem;
   background: #20159d;
   color: white;
   cursor: pointer;
