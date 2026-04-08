@@ -7,31 +7,21 @@ import {
   PreviewButton,
 } from "./NavbarStyle";
 import { PreviewIcon } from "../icons/AppIcons";
-import { Link, useNavigate } from "@tanstack/react-router";
+import { Link } from "@tanstack/react-router";
 
-interface HeaderProps {
-  isPreview: boolean;
-  setIsPreview: (isPreview: boolean) => void;
-}
-
-const Navbar: React.FC<HeaderProps> = ({ isPreview, setIsPreview }) => {
-  const navigate = useNavigate();
-
-  const handlePreview = () => {
-    setIsPreview(!isPreview);
-    navigate({ to: "/preview" });
-  };
-
+const Navbar: React.FC = () => {
   return (
     <NavbarContent>
-      <Link to="/">
+      <Link to="/" style={{ textDecoration: "none" }}>
         <LogoText>Zerix</LogoText>
       </Link>
       <ButtonGroup>
-        <PreviewButton onClick={handlePreview}>
-          <PreviewIcon />
-          Preview
-        </PreviewButton>
+        <Link to="/preview" style={{ textDecoration: "none" }}>
+          <PreviewButton>
+            <PreviewIcon />
+            Preview
+          </PreviewButton>
+        </Link>
         <ExportButton>Export</ExportButton>
       </ButtonGroup>
     </NavbarContent>
