@@ -1,5 +1,4 @@
-/** @format */
-
+import React from "react";
 import {
   ButtonGroup,
   ExportButton,
@@ -8,25 +7,35 @@ import {
   PreviewButton,
 } from "./NavbarStyle";
 import { PreviewIcon } from "../icons/AppIcons";
-import { Link } from "@tanstack/react-router";
+import { Link, useNavigate } from "@tanstack/react-router";
 
-const Navbar: React.FC = () => {
+interface HeaderProps {
+  isPreview: boolean;
+  setIsPreview: (isPreview: boolean) => void;
+}
+
+const Navbar: React.FC<HeaderProps> = ({ isPreview, setIsPreview }) => {
+  const navigate = useNavigate();
+
+  const handlePreview = () => {
+    setIsPreview(!isPreview);
+    navigate({ to: "/preview" });
+  };
+
   return (
     <NavbarContent>
       <Link to="/">
         <LogoText>Zerix</LogoText>
       </Link>
       <ButtonGroup>
-        <Link to="/preview">
-          <PreviewButton>
-            <PreviewIcon />
-            Preview
-          </PreviewButton>
-        </Link>
-
+        <PreviewButton onClick={handlePreview}>
+          <PreviewIcon />
+          Preview
+        </PreviewButton>
         <ExportButton>Export</ExportButton>
       </ButtonGroup>
     </NavbarContent>
   );
 };
+
 export default Navbar;
