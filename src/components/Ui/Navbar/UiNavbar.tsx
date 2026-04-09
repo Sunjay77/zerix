@@ -1,6 +1,15 @@
 import { BurgerIcon } from "../../elements/icons/AppIcons";
-import { BurgerButton, LogoTxt, MobileMenu, MobileMenuItem, NavbarContent, NavCta, NavLi, NavLinks } from "./UiNavbarStyle";
-import React, { useState } from "react";  
+import {
+  BurgerButton,
+  LogoTxt,
+  MobileMenu,
+  MobileMenuItem,
+  NavbarContent,
+  NavCta,
+  NavLi,
+  NavLinks,
+} from "./UiNavbarStyle";
+import React, { useState } from "react";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,16 +31,16 @@ const Navbar: React.FC = () => {
         </NavLi>
       </NavLinks>
       <NavCta>Get Started</NavCta>
-      <BurgerButton onClick={() => setIsOpen(!isOpen)}> 
+      <BurgerButton onClick={() => setIsOpen(!isOpen)}>
         <BurgerIcon />
       </BurgerButton>
 
-      {isOpen && (                                        
+      {isOpen && (
         <MobileMenu>
-          <MobileMenuItem onClick={() => setIsOpen(false)}>Home</MobileMenuItem>
-          <MobileMenuItem onClick={() => setIsOpen(false)}>Features</MobileMenuItem>
-          <MobileMenuItem onClick={() => setIsOpen(false)}>Pricing</MobileMenuItem>
-          <MobileMenuItem onClick={() => setIsOpen(false)}>Contact</MobileMenuItem>
+          <MobileMenuItem>Home</MobileMenuItem>
+          <MobileMenuItem>Features</MobileMenuItem>
+          <MobileMenuItem>Pricing</MobileMenuItem>
+          <MobileMenuItem>Contact</MobileMenuItem>
         </MobileMenu>
       )}
     </NavbarContent>
