@@ -69,9 +69,7 @@ export const MobileMenu = styled.div`
   border-radius: 12px;
   padding: 0.5rem;
   z-index: 100;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  animation:  0.2s ease forwards;
+  border: 1px solid #ccc;
 `;
 
 export const MobileMenuItem = styled.div`
