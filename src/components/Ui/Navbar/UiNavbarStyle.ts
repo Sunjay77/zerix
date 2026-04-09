@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const NavbarContent = styled.nav`
-  position: relative; /* add this */
+  position: relative;
   background: #07005c;
   display: flex;
   align-items: center;
